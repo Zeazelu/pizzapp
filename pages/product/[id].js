@@ -15,7 +15,7 @@ const Product = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-            <Image src={pizza.img} contain fill alt=''/>
+            <Image src={pizza.img} contain="true" fill alt=''/>
         </div>
       </div>
       <div className={styles.right}>
@@ -57,7 +57,7 @@ const Product = () => {
             </div>
         </div>
         <div className={styles.add}>
-          <input type='number' defaultValue={1} classname={styles.quantity}/>
+          <input type='number' defaultValue={1} className={styles.quantity}/>
           <button className={styles.button}>Dodaj do koszyka</button>
         </div>
       </div>

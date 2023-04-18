@@ -22,17 +22,17 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <div className={styles.arrowContainer} style={{ left: 0 }} onClick={()=>handleArrow("l")}>
-        <Image src="/images/arrowl.svg" alt="" fill contain/>
+        <Image src="/images/arrowl.svg" alt="" fill contain="true"/>
       </div>
       <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
         {images.map((img, i) => (
           <div className={styles.imgContainer} key={i}>
-            <Image src={img} alt="" fill contain />
+            <Image src={img} alt="" fill contain="true" />
           </div>
         ))}
       </div>
       <div className={styles.arrowContainer} style={{ right: 0 }} onClick={()=>handleArrow("r")}>
-        <Image src="/images/arrowr.svg" fill alt="" contain/>
+        <Image src="/images/arrowr.svg" fill alt="" contain="true"/>
       </div>
     </div>
   );
