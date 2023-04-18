@@ -18,12 +18,20 @@ const Navbar = () => {
           <li className={styles.listItem}>Strona Główna</li>
           <li className={styles.listItem}>Produkty</li>
           <li className={styles.listItem}>Menu</li>
-          <Image src="/images/logo.svg" alt="" width="160" height="69" />
+        </ul>
+        </div>
+        <div className={styles.item}>
+          <ul className={styles.list}>
+            <Image src="/images/logo.svg" alt="" width="160" height="69" />
+          </ul>
+        </div>
+        <div className={styles.item}>
+          <ul className={styles.list}>
           <li className={styles.listItem}>Wydarzenia</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Kontakt</li>
         </ul>
-      </div>
+        </div>
       <div className={styles.item}>
         <div className={styles.cart}>
           <Image src="/images/cart.svg" alt="" width="30" height="30" />
