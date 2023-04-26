@@ -26,7 +26,9 @@ const Navbar = () => {
         </div>
         <div className={styles.item}>
           <ul className={styles.list}>
-            <Image src="/images/logo.svg" alt="" width="160" height="69" />
+            <Link href="/" passHref>
+              <Image src="/images/logo.svg" alt="" width="160" height="69" />
+            </Link>
           </ul>
         </div>
         <div className={styles.item}>
