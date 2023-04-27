@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.callButton}>
-          <Image src="/images/phone.svg" alt="" width="52" height="52" />
+          <Image src="/images/phone.svg" alt="" width="32" height="32" />
         </div>
         <div className={styles.texts}>
           <div className={styles.text}>ZAMÓW TERAZ!</div>
@@ -22,18 +22,9 @@ const Navbar = () => {
           <Link href="/" passHref>
             <li className={styles.listItem}>Strona Główna</li>
           </Link>
+          <li className={styles.listItem}>Restauracje</li>
           <li className={styles.listItem}>Menu</li>
-        </ul>
-        </div>
-        <div className={styles.item}>
-          <ul className={styles.list}>
-            <Link href="/" passHref>
-              <Image src="/images/logo.svg" alt="" width="160" height="69" />
-            </Link>
-          </ul>
-        </div>
-        <div className={styles.item}>
-          <ul className={styles.list}>
+          <Image src="/images/logo.svg" alt="" width="160" height="69" />
           <li className={styles.listItem}>Wydarzenia</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Kontakt</li>
