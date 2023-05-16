@@ -144,13 +144,13 @@ const Cart = () => {
         <div className={styles.wrapper}>
           <h2 className={styles.title}>PODSUMOWANIE</h2>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Subtotal:</b>{cart.total}zł
+            <b className={styles.totalTextTitle}>Suma:</b>{cart.total}zł
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Discount:</b>0.00zł
+            <b className={styles.totalTextTitle}>Rabat:</b>0.00zł
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>{cart.total}zł
+            <b className={styles.totalTextTitle}>Całkowity koszt:</b>{cart.total}zł
           </div>
           {open ? (
             <div className={styles.paymentMethods}>

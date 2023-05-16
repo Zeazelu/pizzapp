@@ -67,7 +67,6 @@ const Index = ({ orders, products }) => {
                 <td>{product.title}</td>
                 <td>{product.prices[0]}zł</td>
                 <td>
-                  <button className={styles.button}>Edytuj</button>
                   <button
                     className={styles.button}
                     onClick={() => handleDelete(product._id)}

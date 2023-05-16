@@ -14,7 +14,7 @@ const Footer = () => {
                     </h2>
                 </div>
                 <div className={styles.card}>
-                    <h1 className={styles.title}>ZNAJDŹ NASZE RESTAURACJE</h1>
+                    <h1 className={styles.title}> NASZE RESTAURACJE</h1>
                     <p className={styles.text}>
                         ul. Sienkiewicza 12
                         <br /> 25-007 Kielce

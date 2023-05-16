@@ -6,9 +6,11 @@ import axios from 'axios'
 import { useState } from 'react'
 import Add from '@/components/Add'
 import AddButton from '@/components/AddButton'
+import Recomendation from '@/components/Recomendation'
 
 export default function Home({pizzaList, admin}) {
   const [close, setClose] = useState(true);
+  
   return (
     <div className={styles.container}>
     <Head>
@@ -20,7 +22,8 @@ export default function Home({pizzaList, admin}) {
     <Featured/>
     {admin && <AddButton setClose={setClose}/>}
     <PizzaList pizzaList={pizzaList}/>
-    {!close && <Add/>}
+    {!close && <Add setClose={setClose}/>}
+    <Recomendation/>
     </div>
   )
 }

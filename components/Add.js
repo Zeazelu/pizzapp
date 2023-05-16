@@ -54,16 +54,16 @@ const Add = ({ setClose }) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <span onClick={() => setClose(true)} className={styles.close}>
+      <span onClick={() => setClose(true)} className={styles.close}>
           X
         </span>
-        <h1>Add a new Pizza</h1>
+        <h1>Dodaj nową pizzę</h1>
         <div className={styles.item}>
-          <label className={styles.label}>Choose an image</label>
+          <label className={styles.label}>Wybierz zdjęcie</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Title</label>
+          <label className={styles.label}>Nazwa</label>
           <input
             className={styles.input}
             type="text"
@@ -71,7 +71,7 @@ const Add = ({ setClose }) => {
           />
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Desc</label>
+          <label className={styles.label}>Opis</label>
           <textarea
             rows={4}
             type="text"
@@ -79,30 +79,30 @@ const Add = ({ setClose }) => {
           />
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Prices</label>
+          <label className={styles.label}>Ceny</label>
           <div className={styles.priceContainer}>
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Small"
+              placeholder="Mała"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Medium"
+              placeholder="Średnia"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Large"
+              placeholder="Duża"
               onChange={(e) => changePrice(e, 2)}
             />
           </div>
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Extra</label>
+          <label className={styles.label}>Dodatki</label>
           <div className={styles.extra}>
             <input
               className={`${styles.input} ${styles.inputSm}`}
@@ -119,7 +119,7 @@ const Add = ({ setClose }) => {
               onChange={handleExtraInput}
             />
             <button className={styles.extraButton} onClick={handleExtra}>
-              Add
+              Dodaj
             </button>
           </div>
           <div className={styles.extraItems}>
@@ -131,7 +131,7 @@ const Add = ({ setClose }) => {
           </div>
         </div>
         <button className={styles.addButton} onClick={handleCreate}>
-          Create
+          Dodaj pizzę
         </button>
       </div>
     </div>

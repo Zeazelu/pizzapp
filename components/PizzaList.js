@@ -5,9 +5,9 @@ import PizzaCard from './PizzaCard'
 const PizzaList = ({pizzaList}) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.tytle}>NAJLEPSZA PIZZA W MIEŚCIE</h1>
+      <h1 className={styles.title}>Najlepsze pizza w mieście czeka na Ciebie!</h1>
       <p className={styles.desc}>
-        Siema wbijajcie na najlepszą pizze w mieście. Dużo sera, salami od maćka z woli.
+      Rozkoszuj się kulinarnym majstersztykiem - Nasze menu pełne wykwintnych smaków czeka na Twoje podniebienie!
       </p>
       <div className={styles.wrapper}>
         {pizzaList.map((pizza) => (
